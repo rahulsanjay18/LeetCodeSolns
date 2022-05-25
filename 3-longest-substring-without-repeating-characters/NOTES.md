@@ -1,1 +1,1 @@
-​
+Originally line 18 had + 1 instead of + big, which caused a time limit exceeded. put + big because we don't care about any substring that is fully unique that has a lower length than our largest length
