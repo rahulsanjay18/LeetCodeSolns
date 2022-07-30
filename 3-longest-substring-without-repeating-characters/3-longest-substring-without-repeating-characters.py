@@ -1,31 +1,27 @@
+from collections import Counter
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         """
         :type s: str
         :rtype: int
         """
+        
         i = 0
         j = 1
+        highest = 0
         
-        big = 0
-        
-        while j <= len(s):
-            if self.isUnique(s[i:j]):
+        while i >= 0 and j <= len(s) and j > i:
+            sub = s[i:j]
+            if self.isUnique(sub):
+                # print("here")
+                highest = max(highest, j-i)
                 j += 1
             else:
-                big = j - i - 1 if j - i - 1 > big else big
                 i += 1
-                j = i + big
+                j += 1
+                
+        return highest
     
-        return j - i - 1 if j - i - 1 > big else big
-
-    
-    def isUnique(self, s):
-        rec = set()
-        for c in s:
-            if c in rec:
-                return False
-            else:
-                rec.add(c)
-        
-        return True
+    def isUnique(self, sub):
+        return len((Counter(sub)).items()) == len(sub)
+            
