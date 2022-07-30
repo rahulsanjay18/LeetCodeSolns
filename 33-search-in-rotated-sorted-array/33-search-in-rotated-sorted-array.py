@@ -16,7 +16,7 @@ class Solution(object):
             print(low, mid, high)
             if nums[mid] == target:
                 return mid
-            elif (nums[low] <= target <= nums[mid]) or (nums[mid] <= nums[high]) and (target < nums[mid] or target > nums[high]):
+            elif ((nums[low] <= target <= nums[mid]) or (nums[mid] <= nums[high])) and (target < nums[mid] or target > nums[high]):
                 high = mid - 1
             else:
                 low = mid + 1
