@@ -11,11 +11,17 @@ class Solution(object):
         :rtype: bool
         """
         
-        tracker = set()
+        s = head
+        f = head
         
-        while head != None:
-            tracker.add(head)
-            head = head.next
-            if head in tracker:
+        while s != None:
+            
+            if f.next and f.next.next:
+                s = s.next
+                f = f.next.next
+            else:
+                return False
+            if s == f:
                 return True
+        
         return False
