@@ -1,1 +1,1 @@
-​
+If you write out the case for n=5, you can see it just forms a fibbonacci sequence. You can do the recursive bit but you may overflow the stack.
