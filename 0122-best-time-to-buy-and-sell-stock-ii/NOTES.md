@@ -1,1 +1,2 @@
 ​
+Here, we need to keep track of two things, the overall profit, and the price we are updating from. Basically, we just want to get every future positive difference between adjacent elements in the cell.
