@@ -1,1 +1,1 @@
-​
+My first attempt at this was really dumb frankly. The idea was to assume that these strings are isomorphic, create maps for both and then reconstruct the string assuming they are isomorphic. check if they are the same and you're done.
