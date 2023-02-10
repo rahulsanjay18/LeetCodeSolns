@@ -11,10 +11,7 @@ class Solution:
                 c_map[s[i]] = t[i]
             if t[i] not in b_map:
                 b_map[t[i]] = s[i]
-        
-        new_s = ''
-        new_t = ''
-        
+      
         for i in range(len(s)):
             if c_map[s[i]] != t[i] or b_map[t[i]] != s[i]:
                 return False
