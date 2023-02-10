@@ -16,8 +16,8 @@ class Solution:
         new_t = ''
         
         for i in range(len(s)):
-            new_s += c_map[s[i]]
-            new_t += b_map[t[i]]
+            if c_map[s[i]] != t[i] or b_map[t[i]] != s[i]:
+                return False
         
-        return new_s == t and new_t == s
+        return True
         
