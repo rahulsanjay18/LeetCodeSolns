@@ -1,1 +1,1 @@
-Here, the idea is to iterate through t and create a map of each character in s mapping to a list of indexes of t we can
+Here, the idea is to iterate through t and create a map of each character in s mapping to a list of indexes of t where the character in s is located. Then, we go through each character in s and check if there exists an index after our tracked index that contains the letter we desire. if not, return false, if we pass through the entire algorithm we return true.
