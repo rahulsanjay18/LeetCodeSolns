@@ -1,1 +1,1 @@
-​
+Here, the idea is to iterate through t and create a map of each character in s mapping to a list of indexes of t we can
