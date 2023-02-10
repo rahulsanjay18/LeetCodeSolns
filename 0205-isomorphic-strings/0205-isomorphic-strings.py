@@ -1,5 +1,7 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
+        return len(set(s)) == len(set(t)) == len(set(zip(s, t)))
+        '''
         if len(s) != len(t) or len(s) == 0:
             return False
         
@@ -17,4 +19,4 @@ class Solution:
                 return False
         
         return True
-        
+        '''
