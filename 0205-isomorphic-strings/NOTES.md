@@ -1,4 +1,4 @@
 My first attempt at this was really dumb frankly. The idea was to assume that these strings are isomorphic, create maps for both and then reconstruct the string assuming they are isomorphic. check if they are the same and you're done.
 My second attempt was to replace the reconstructing of strings to instead just check if the maps were correctly formed.
 ​
-The best solution was the one liner, which is the official thing I'm submitting.
+The best solution was the one liner, which is the official thing I'm submitting. The idea is, if the string is isomorpnic, the lengths of the sets formed by their character arrays and also equal to the length of the set formed by pairing up each element.
