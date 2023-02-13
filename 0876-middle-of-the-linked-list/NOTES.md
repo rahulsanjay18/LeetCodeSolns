@@ -1,1 +1,1 @@
-​
+the straightforward solution is simple, but what was interesting to me was the faster, two pointer method. Try that one next time around, it's a one pass method.
